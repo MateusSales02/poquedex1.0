@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:pokedex/screens/details.dart';
-// import 'package:pokedex/screens/home.dart';
+import 'package:poquedex/telas/home.dart';
 
 void main() {
   runApp(const MainApp());
@@ -14,10 +13,10 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: 'Pokedex',
       theme: ThemeData(primarySwatch: Colors.blue),
-      // // routes: {
-      //   '/': (context) => const HomeScreen(),
-      //   '/details': (context) => const DetailsScreen(),
-      // },
+      routes: {
+        '/': (context) => const HomeScreen(),
+        // '/details': (context) => const DetailsScreen(),
+      },
       initialRoute: '/',
     );
   }
